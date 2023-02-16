@@ -2,12 +2,12 @@
 
 /**
  * main - Entry
- * Descriorion: Prints "with proper grammar, but the outcome is a piece of art,\n"
- * return: Return 0
+ * Descriorion: use printf
+ * return: 0
  */
 
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
+	printf("%s", "with proper grammar, but the outcome is a piece of art,\n");
 	return(0);
 }
