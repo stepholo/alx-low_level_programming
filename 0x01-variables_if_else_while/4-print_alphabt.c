@@ -9,15 +9,16 @@
  */
 int main(void)
 {
-	int n;
+	char c = 'a';
 
-	for (n = 97; n <= 122; ++n)
+	while (c <= 'z')
 	{
-		if (n != 101 && n != 133)
+		if (n != 'e' && n != 'q')
 		{
-			putchar(n);
+			putchar(c);
 		}
+		c++
 	}
-	putchar(10);
+	putchar('\n');
 	return (0);
 }
