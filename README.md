@@ -1,1 +1,1 @@
-Low level programming language with C.
+This is about variables, if...else and while
