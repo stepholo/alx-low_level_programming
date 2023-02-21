@@ -2,13 +2,14 @@
 
 /**
  * add - Prints sum of two values
- * @int: values are integers
+ * @x: first value
+ * @y: second value
  * Return: int
  */
 
-int add(int, int)
+int add(int x, int y)
 {
-	int x, y, sum;
+	int sum;
 
 	sum = (x + y);
 	return (sum);
