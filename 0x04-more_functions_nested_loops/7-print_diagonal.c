@@ -5,7 +5,7 @@
  * @n: number of times
  * Return: no return
  */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	int i = 0, j;
 
@@ -17,7 +17,7 @@ void print_diagonal(int n);
 			_putchar(' ');
 			j++
 		}
-		
+
 		_putchar('\\');
 		_putchar('\n');
 		i++
