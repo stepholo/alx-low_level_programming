@@ -1,6 +1,5 @@
-#include "main.h"
-#include <stdio.h>
-
+#include <stdio.h>
+#include "main.h"
 /**
  * print_array - print `n` elements of an array of integer
  * @a: int type array pointer
@@ -10,12 +9,12 @@
  * You can only use _putchar to print.
  */
 
-void print_array(int *a, int n)
+void print_array(int *a, int n)
 {
 	int i;
 
 	i = 0;
-	for (n--; n >= 0; n--; i++)
+	for (n--; n >= 0; n--, i++)
 	{
 		printf("%d", a[i]);
 		if (n > 0)
@@ -23,5 +22,5 @@ void print_array(int *a, int n)
 			printf(", ");
 		}
 	}
-	printf('\n');
+	printf("\n");
 }
