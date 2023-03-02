@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - Replace value in an array
+ * Return: no return
+ */
 int main(void)
 {
 	int n;
