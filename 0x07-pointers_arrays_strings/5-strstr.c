@@ -12,10 +12,11 @@ char *_strstr(char *haystrack, char *needle)
 {
 	int index;
 
-	if (needle == 0)
+	if (*needle == 0)
 	{
 		return (haystrack);
 	}
+
 	while (*haystrack)
 	{
 		index = 0;
@@ -25,11 +26,14 @@ char *_strstr(char *haystrack, char *needle)
 			do {
 				if (needle[index + 1] == '\0')
 					return (haystrack);
+
 				index++;
+
 			} while (haystrack[index] == needle[index]);
 		}
 
 		haystrack++;
 	}
+
 	return ('\0');
 }
