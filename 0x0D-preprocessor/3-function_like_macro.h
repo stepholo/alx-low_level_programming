@@ -8,6 +8,6 @@
  * @x: the number to find its absolute value
  */
 
-#define ABS(x) ((x) < 0 ? (-x) : (x))
+#define ABS(x) ((x) < (0) ? ((x) * (-1)) : (x))
 
 #endif
