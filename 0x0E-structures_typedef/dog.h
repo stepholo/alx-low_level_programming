@@ -1,6 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
 
+/**
+ * dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
+
 /*
  * File: dog.h
  * Desc: Header file that defines a new type struct dog.
