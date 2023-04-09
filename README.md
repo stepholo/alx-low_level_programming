@@ -2,7 +2,8 @@
 
 C programming language is a mother language for most modern programming language and having skills in this language will make it easy to learn other languages.
 This repository contains programs written for the low-level programming and algorithm track at the alx-SoftwareEngineering program facilitated by Holberton School. I am learning about data
-structures, algorithms, and other low-level programming concepts while working in the C language. I update this repo with my learning progresses with hands-on projects as listed below:
+structures, algorithms, and other low-level programming concepts while working in the C language. I update this repo with my learning progresses with hands-on projects as listed below.
+I hope to learn more and one day become a C programming language developer:
 
 
 * [0x00. C - Hello, World](./0x00-hello_world)
@@ -22,8 +23,10 @@ structures, algorithms, and other low-level programming concepts while working i
 * [0x0E. C - Structures, typedef](./0x0E-structures_typedef)
 * [0x0F. C - Function pointers](./0x0F-function_pointers)
 * [0x10. C - Variadic functions](./0x10-variadic_functions)
-* [0x11. C - printf](https://github.com/Faitholo/printf)
+* [0x11. C - printf](https://github.com/stepholo/printf)
 * [0x12. C - Singly linked lists](./0x12-singly_linked_lists)
+* [0x13. C - More Singly linked lists](./0x13-more_singly_linked_lists/)
+
 
 
 - I will be updating this repo as I complete more tasks
