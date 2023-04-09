@@ -10,7 +10,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
-	int i;
+	int i = 0;
 
 
 	if (b[i] == '\0')
@@ -24,7 +24,8 @@ unsigned int binary_to_uint(const char *b)
 		sum += b[i] - '0';
 	}
 
-	return (sum)
+	return (sum);
+}
 
 
 
