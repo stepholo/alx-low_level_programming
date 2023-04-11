@@ -15,7 +15,7 @@ void _close(int file_desc)
 
 	i = close(file_desc);
 
-	if (c == -1)
+	if (i == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close file desc %d\n", file_desc);
 		exit(100);
@@ -71,13 +71,22 @@ int main(int argc, char *argv[])
 	buffer = create_buffer(argv[2]);
 	from = open(argv[1], O_RDONLY);
 	i = read(from, buffer, 1024);
-	to = open(arg[2], O_CREATE | O_WRONLY | O_TRUNC, 0664);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (from == -1 || r == -1)
+		if (from == -1 || i == -1)
 		{
 			dprintf(STDERR_FILENO,
-					"Error: Can't write to %s\n", arg[2]);
+					"Error: Can't write to %s\n", argv[2]);
+			free(buffer);
+			exit(98);
+		}
+
+		j = write(to, buffer, i);
+		if (to == -1 || j == -1)
+		{
+			dprintf(STDERR_FILENO,
+					"Error: Can't write to %s\n", argv[2]);
 			free(buffer);
 			exit(99);
 		}
