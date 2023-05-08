@@ -27,16 +27,20 @@ void copy_file(const char *file_from, const char *file_to)
 	if (fd_from == -1)
 		error(file_from, 98);
 
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
 		error(file_to, 99);
 
-	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
-	{
+	bytes_read = read(fd_from, buffer, BUFFER_SIZE);
+
+	do {
+		if (fd_from == -1 || bytes_read == -1)
+			error(file_from, 98);
+
 		bytes_written = write(fd_to, buffer, bytes_read);
-		if (bytes_written == -1)
-			error(file_to, 99);
-	}
+		if (fd_to == -1 || j == -1)
+			error(file_to, 98);
+	} while (bytes_read > 0)
 
 	if (bytes_read == -1)
 		error(file_from, 98);
