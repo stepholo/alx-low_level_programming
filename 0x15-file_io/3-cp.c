@@ -38,9 +38,13 @@ void copy_file(const char *file_from, const char *file_to)
 			error(file_from, 98);
 
 		bytes_written = write(fd_to, buffer, bytes_read);
-		if (fd_to == -1 || j == -1)
+		if (fd_to == -1 || bytes_written == -1)
 			error(file_to, 98);
-	} while (bytes_read > 0)
+
+		bytes_read = read(fd_from, buffer, BUFFER_SIZE);
+		fd_to = open(file_to, O_WRONLY | O_APPEND);
+
+	} while (bytes_read > 0);
 
 	if (bytes_read == -1)
 		error(file_from, 98);
