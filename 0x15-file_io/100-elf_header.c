@@ -132,20 +132,20 @@ void display_elf_header(FILE *fp)
 	printf("ELF Header:\n");
 	printf("  Magic:    ");
 	print_hex_dump((const unsigned char *)elf_header.e_ident, EI_NIDENT);
-	printf("  Class:			      ");
+	printf("  Class:                            ");
 	printf("%s\n", elf_header.e_ident[EI_CLASS] ==
 			ELFCLASS64 ? "ELF64" : "ELF32");
-	printf("  Data:			              ");
+	printf("  Data:                             ");
 	printf("%s\n", elf_header.e_ident[EI_DATA] == ELFDATA2LSB ?
 			"2's complement, little endian" : "2's complement, big endian");
-	printf("  Version:			      ");
+	printf("  Version:                          ");
 	printf("%d (current)\n", elf_header.e_ident[EI_VERSION]);
-	printf("  OS/ABI:			      ");
+	printf("  OS/ABI:                           ");
 	printf("%s\n", get_os_abi_name(elf_header.e_ident[EI_OSABI]));
-	printf("  ABI Version:			      ");
+	printf("  ABI Version:                      ");
 	printf("%d\n", elf_header.e_ident[EI_ABIVERSION]);
-	printf("  Type:			              ");
+	printf("  Type:                             ");
 	printf("%s\n", get_type_name(elf_header.e_type));
-	printf("  Entry point address:		      ");
+	printf("  Entry point address:              ");
 	printf("%#010x\n", (unsigned int)elf_header.e_entry);
 }
