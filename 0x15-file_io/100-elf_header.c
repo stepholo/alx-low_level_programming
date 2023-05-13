@@ -130,7 +130,7 @@ void display_elf_header(FILE *fp)
 	}
 
 	printf("ELF Header:\n");
-	printf("  Magic:    ");
+	printf("  Magic:       ");
 	print_hex_dump((const unsigned char *)elf_header.e_ident, EI_NIDENT);
 	printf("  Class:                            ");
 	printf("%s\n", elf_header.e_ident[EI_CLASS] ==
