@@ -28,13 +28,16 @@ I hope to learn more and one day become a C programming language developer:
 * [0x13. C - More Singly linked lists](./0x13-more_singly_linked_lists/)
 * [0x14. C - Bit Manipulation](./0x14-bit_manipulation/)
 * [0x15. C - File Input Output](./0x15-file_io/)
+* [0x17-doubly_linked_lists](./0x17-doubly_linked_lists/)
+* [0x18-dynamic_libraries](./0x18-dynamic_libraries/)
+* [0x1A-hash_tables](./0x1A-hash_tables/)
 
 
 
 - I will be updating this repo as I complete more tasks
 - Being a Software Engineer has been long cherished desire that I'm now on my way to fulfilling.
 
-## Author 
+## Author
 + [Stephen B.Oloo](twitter.com/Stevenob12)
 
 ---
