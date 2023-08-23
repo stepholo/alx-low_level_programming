@@ -1,11 +1,12 @@
-# Rules
-all : school
-
 # Variables
 CC = gcc
 NAME = school
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
+
+# Rule
+all : $(NAME)
+
 
 # Target and Dependencies
 school : $(OBJ)
